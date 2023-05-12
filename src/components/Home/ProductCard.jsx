@@ -19,15 +19,15 @@ const ProductCard = ({product}) => {
  
     return (
     <Link to={`/product/${product?.id}`}>
-    <article className="border-[1px] border-gray-300">
-        <div className="p-4 border-b-[1px] border-gray-300 h-[200px] overflow-hidden ">
+    <article className="border-[1px] mt-5 border-gray-300">
+        <div className="p-4 py-10 border-b-[1px] border-gray-300 h-[200px] overflow-hidden ">
             <img className="h-full w-full object-contain" src={product?.images[0].url} alt="" />
         </div>
         <section className="p-4 relative">
-            <h4 className="text-gray-400 font-bold">{product?.brand}</h4>
-            <h3 className="font-bold text-sm ml-2">{product?.title}</h3>
-            <h4 className="text-gray-400 font-bold">Price</h4>
-            <span className="font-bold text-sm ml-2">{product?.price}</span>
+            <h4 className="text-gray-300 font-bold">{product?.brand}</h4>
+            <h3 className="font-bold text-gray-600 text-md ml-2">{product?.title}</h3>
+            <h4 className="text-gray-300 font-bold">Price</h4>
+            <span className="font-bold text-gray-600 text-md ml-2">${product?.price}</span>
 
             <button onClick={handleClickAddProduct} className="absolute right-4 bottom-4 bg-red-500 p-2 text-white text-xl rounded-full w-[45px] aspect-square hover:bg-red-600 transition-colors">
                 <i className='bx bx-cart-alt' ></i>

@@ -16,12 +16,12 @@ const Header = () => {
   }
 
   return (
-    <section className="flex p-4 justify-between">
-        <Link to={'/'}><h1 className="font-bold text-red-400">e-commerce</h1></Link>
-        <nav className="flex gap-10 text-gray-400">
-            <Link to='/login'><i className='bx bx-user'></i></Link>
-            <Link to='/purchases'><i className='bx bx-box'></i></Link>
-            <button onClick={handleClickChangeShowCart}><i className='bx bx-cart'></i></button>       
+    <section className="flex p-4 justify-between items-center fixed bg-white w-full z-50 md:px-10">
+        <Link to={'/'}><h1 className="font-bold text-[1.4rem] md:text-2xl text-red-400">e-commerce</h1></Link>
+        <nav className="flex gap-5 md:gap-24 text-gray-400">
+            <Link to='/login'><i className='bx bx-user text-2xl'></i></Link>
+            <Link to='/purchases'><i className='bx bx-box text-2xl'></i></Link>
+            <button onClick={handleClickChangeShowCart}><i className='bx bx-cart text-2xl'></i></button>       
         </nav>
     </section>
   )

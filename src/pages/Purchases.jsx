@@ -20,7 +20,7 @@ const Purchases = () => {
     .catch(err => console.error(err))
   },[])
   return (
-    <main className="px-2 max-w-[1200px] mx-auto">
+    <main className="px-2 max-w-[1200px] mt-24 mx-auto">
       <section className=" gap-2 items-center">
           <div className="flex items-center gap-1">
           <Link to="/">Home</Link>

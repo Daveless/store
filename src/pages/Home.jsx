@@ -47,12 +47,12 @@ const Home = () => {
   }, [currentcategory])
 
   return (
-    <main className="px-2">
+    <main className="px-8 mt-24 max-w-[1200px] mx-auto">
       <form onSubmit={handleSubmit} action="">
-        <div>
-          <input id="productName" placeholder="What are you looking for?" type="text" />
+        <div className="grid grid-cols-[1fr_auto] ">
+          <input className="w-full border-[1px] border-gray-300 p-2 placeholder:text-gray-300" id="productName" placeholder="What are you looking for?" type="text" />
           <button>
-            <i className="bx bx-search"></i>
+            <i className="bx bx-search p-4 bg-red-500 text-white"></i>
           </button>
         </div>
 
@@ -64,7 +64,7 @@ const Home = () => {
         </ul>
       </form>
 
-      <section className='grid gap-8 py-2'>
+      <section className='grid sm:grid-cols-2 gap-8 md:grid-cols-3 xl:grid-cols-4 py-2'>
         {
           productsByname?.map((product) => (
             <ProductCard key={product.id} product={product}/>

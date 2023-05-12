@@ -18,9 +18,9 @@ const SimilarProducts = ({categoryID, productID}) => {
 
     
 
-    <section className="px-2">
+    <section className="px-2 ">
         <h2 className="text-red-500 font-bold text-lg">Discover similar items</h2>
-        <section className="grid gap-6 py-4">
+        <section className="grid gap-6 py-4 sm:grid-cols-2 sm:px-10">
             {
                 similarProducts.map(product => <ProductCard key={product.id} product={product}/>)
             }

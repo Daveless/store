@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <main className="bg-gray-100 grid place-content-center px-2">
+    <main className="bg-gray-100 grid place-content-center px-2 h-screen">
     {token? (
       <section className="bg-white p-4 w-[300px] text-center rounded-md max-w-[350] grid gap-6">
         <i className='bx bxs-user-circle text-6xl' ></i>
